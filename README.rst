@@ -25,7 +25,8 @@ The output looks something like this::
     1 3 5 5|3 1 7 3|5 5 3 5|3 5 1 5|5 7 7 5|5 7 1 5|1 1 1 1|7 3 1 7|
 
 Notes:
-- You can use roman or arabic numerals to specify the degrees of your chords
-- If you use roman numerals, the case is ignored.
-  We always use the diatonic chords of the given scale.
-  Hence for C major, ii, II and 2 all mean Dm, not D.
+
+ - You can use roman or arabic numerals to specify the degrees of your chords
+ - If you use roman numerals, the case is ignored.
+   We always use the diatonic chords of the given scale.
+   Hence for C major, ii, II and 2 all mean Dm, not D.
