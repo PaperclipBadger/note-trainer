@@ -26,7 +26,7 @@ The output looks something like this::
 
 Notes:
 
- - You can use roman or arabic numerals to specify the degrees of your chords
- - If you use roman numerals, the case is ignored.
+-  You can use roman or arabic numerals to specify the degrees of your chords
+-  If you use roman numerals, the case is ignored.
    We always use the diatonic chords of the given scale.
    Hence for C major, ii, II and 2 all mean Dm, not D.
