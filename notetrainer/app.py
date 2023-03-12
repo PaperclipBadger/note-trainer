@@ -28,7 +28,7 @@ def parse_mode(arg: str) -> Mode:
 parser = argparse.ArgumentParser()
 parser.add_argument('root', type=parse_root, help='root note of scale')
 parser.add_argument('mode', type=parse_mode, help='mode of scale')
-parser.add_argument('chords', nargs=4, help='4 chord progression, by degree')
+parser.add_argument('chords', nargs='+', help='4 chord progression, by degree')
 parser.add_argument('--bpm', type=float, default=60.0, help='beats per minute')
 parser.add_argument('--n-bars', type=int, default=8, help='number of bars to preview')
 args = parser.parse_args()
@@ -45,7 +45,7 @@ key = Key(args.root, args.mode)
 chords = [parse_chord(key, chord) for chord in args.chords]
 
 def get_chord(bar):
-    chord = chords[bar % 4]
+    chord = chords[bar % len(chords)]
     return f'{chord.guitar_notation():7s}|'
 
 def get_melody(bar):
